@@ -1,0 +1,27 @@
+.radial {
+    background: radial-gradient(circle, #44FFAA, #22BBFF);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.conic {
+    background: conic-gradient(from 145deg, #44FFAA, #22BBFF);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.rainbow {
+    background: linear-gradient(-45deg, red, orange, yellow, green, blue, indigo, violet);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.rainbow p {
+    color: rgba(255, 255, 255, 0.3);
+			font-size: 20px;
+			line-height: 1.5;
+			text-align: center;
+}
