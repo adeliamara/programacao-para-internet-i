@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h2>Solution to question 4: JavaScript HTML DOM</h2>
+
+<p id="question">
+    <b>
+        Qual a diferença entre as propriedades textContent e innerHTML dos elementos
+HTML? Cite exemplos.
+    </b>
+</p>
+
+<p>As propriedades textContent e innerHTML são usadas para acessar ou alterar o conteúdo de um elemento HTML, mas existem algumas diferenças importantes entre elas.</p>
+
+<p>
+    A propriedade textContent retorna ou define apenas o texto dentro do elemento, sem qualquer marcação HTML. Já a a propriedade innerHTML retorna ou define o conteúdo completo do elemento, incluindo qualquer marcação HTML dentro dele. 
+</p>
+
+
+
+
+<div id="exemplo">Este é um <strong>exemplo</strong> de texto.</div>
+
+<p id="demo"></p>
+
+<p id="demo2"></p>
+
+<script>
+    const exemplo = document.getElementById('exemplo');
+
+    document.getElementById("demo").innerHTML = 'Este é o RESULTADO com o textContent: ' + exemplo.textContent;
+
+    document.getElementById("demo2").innerHTML = 'Este é o RESULTADO com o innerHtml: ' + exemplo.innerHTML;
+
+</script>
+
+</body>
+</html>

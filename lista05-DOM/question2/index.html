@@ -1,0 +1,45 @@
+<!--Crie dois exemplos usando os métodos do objeto document:
+a. getElementById();
+b. getElementsByTagName(); -->.
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h2>Solution to question 2: JavaScript HTML DOM</h2>
+
+<p id="question">
+    Crie dois exemplos usando os métodos do objeto document:
+    <ul>
+        <li>getElementById()</li>
+        <li>getElementsByTagName()</li>
+    </ul>
+</p>
+
+<p>This example demonstrates the <b>getElementsById</b> and <b>getElementsByTagName</b> methods.</p>
+
+<p id="demo"></p>
+
+<p id="demo2"></p>
+
+
+<script>
+const element = document.getElementById("question");
+
+document.getElementById("demo").innerHTML = 
+"The text from the intro paragraph is: " + element.innerHTML;
+
+const element2 = document.getElementsByTagName("li");
+
+document.getElementById("demo2").innerHTML = 'The text in first topic (index 0) is: ' + element2[0].innerHTML;
+
+</script>
+
+</body>
+</html>
