@@ -1,0 +1,68 @@
+body {
+    z-index: 0; /* define a ordem de empilhamento para o fundo */
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.2;
+    overflow: hidden;
+    font-weight: bold; 
+}
+
+div.conteudo {
+    position: absolute;
+    z-index: 999; /* define a ordem de empilhamento da div em relação a outros elementos */
+    top: 100px; /* define a distância da borda superior da janela */
+    bottom: 100px; /* define a distância da borda inferior da janela */
+    left: 50px; /* define a distância da borda esquerda da janela */
+    right: 50px; /* define a distância da borda direita da janela */
+    background-color: black;
+    color: black;
+}
+
+h1 {
+    font-family: Arial; 
+    font-style: italic; 
+    color: white;
+    z-index: 9999;
+    position: fixed;
+    padding: 10px 0; /* adiciona um espaçamento superior e inferior para o h1 */
+}
+
+#toptitle {
+    text-align: left;
+    left: 50px;
+    top: 0; /* define a posição do h1 na parte superior da janela */
+
+}
+
+#bottomtitle {
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    right: 50px; /* move o elemento 50 pixels para a esquerda */
+}
+
+
+p {
+    margin-top: 0; /* remove o espaçamento superior do parágrafo */
+    font-family: Verdana;
+    text-align: justify;
+    width: 88%;
+    background-color: black;
+    color: lightgreen;
+    line-height: 1.2;
+    z-index: 9999;
+
+}
+
+.rostoPersonagens {
+    display: inline-block;
+    width: 200px; /* define a largura máxima para 200 pixels */
+    height: 200px; /* define a altura máxima para 300 pixels */
+    object-fit: cover;
+
+  }
+
+
