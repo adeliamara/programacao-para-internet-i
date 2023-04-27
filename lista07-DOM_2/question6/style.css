@@ -1,0 +1,36 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+label {
+    font-size: 12x;
+    font-weight: bold; 
+}
+
+.submit {
+    padding-top: 10px;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+    background-color: #4388a8;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#conteudo {
+    background-color: #f0ebea;
+    border: 2px solid #4388a8;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+    display: none; /* inicialmente oculta a caixa */
+    display: block; /* mostra a caixa quando a classe "mostrar" for adicionada */
+    height: auto; /* ajusta a altura automaticamente */
+  }
+  

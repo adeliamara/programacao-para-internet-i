@@ -1,0 +1,23 @@
+.selects {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+label {
+  margin-right: 10px;
+}
+select {
+  margin-left: 10px;
+}
+button {
+  margin-left: 10px;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  background-color: #4388a8;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}

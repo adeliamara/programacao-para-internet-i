@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Box personalizado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Transferir itens entre selects</h1>
+    <div class="selects">
+        <label for="select1">Select 1</label>
+        <select id="select1" name="select1">
+            <option value="A">1</option>
+            <option value="B">2</option>
+            <option value="C">3</option>
+            <option value="D">4</option>
+        </select>
+        <button id="transf1to2">Transferir Select 1 -> Select 2</button>
+    </div>
+    <div class="selects">
+        <label for="select2">Select 2</label>
+        <select id="select2" name="select2">
+        </select>
+        <button id="transf2to1">Transferir Select 2 -> Select 1</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
