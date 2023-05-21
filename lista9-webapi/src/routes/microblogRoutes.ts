@@ -21,7 +21,7 @@ app.get('/posts', async (req: Request, res: Response) => {
 app.get('/posts/:id', async (req: Request, res: Response) => {
     try {
         const {id} = req.params;
-        const post: Post| undefined = await microblog.retrieve(Number(id));
+        const post: Post | undefined = await microblog.retrieve(Number(id));
         return res.status(200).json(post)
     } catch (error) {
         res.status(404).json({ error: 'Post not found' });

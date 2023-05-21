@@ -15,6 +15,15 @@ async function createDatabase() {
     )
   `);
 
+  await db.exec(`
+  CREATE TABLE IF NOT EXISTS comments (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    text TEXT,
+    post_id INTEGER,
+    FOREIGN KEY (post_id) REFERENCES posts (id)
+  ) 
+  `);
+
   return db;
 }
 
